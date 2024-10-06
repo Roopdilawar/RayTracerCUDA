@@ -1,0 +1,10 @@
+^C:\UALBERTA\RAY_TRACING_PROJECT\RAYTRACER\BUILD\CMAKEFILES\A4BD29251F7F302B541092772CC1593C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/UALBERTA/ray_tracing_project/RayTracer -BC:/UALBERTA/ray_tracing_project/RayTracer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/UALBERTA/ray_tracing_project/RayTracer/build/RayTracer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
