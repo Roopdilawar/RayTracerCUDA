@@ -10,6 +10,7 @@
 #include <cuda_runtime.h>
 #include <iostream>
 #include <fstream>
+#include <curand_kernel.h> // Include CURAND
 
 // Custom clamp function for C++14
 template <typename T>
@@ -19,11 +20,12 @@ __host__ __device__ T clamp_val(T value, T min_val, T max_val) {
     return value;
 }
 
-extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* d_spheres, int num_spheres);
+extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* d_spheres, int num_spheres, curandState* d_states);
+extern "C" void initialize_curand(curandState* d_states, int image_width, int image_height, unsigned long seed);
 
 int main() {
     // Image dimensions
-    const int image_width = 1600;
+    const int image_width = 1600;  
     const int image_height = 1200;
     const int num_pixels = image_width * image_height;
 
@@ -33,7 +35,7 @@ int main() {
 
     // Define camera
     Camera camera;
-    camera.origin = Vector3(0.0f, 0.0f, 0.0f); // Camera at origin
+    camera.origin = Vector3(0.0f, 0.0f, 0.0f); 
     camera.lower_left_corner = Vector3(-2.0f, -1.5f, -1.0f);
     camera.horizontal = Vector3(4.0f, 0.0f, 0.0f);
     camera.vertical = Vector3(0.0f, 3.0f, 0.0f);
@@ -49,8 +51,14 @@ int main() {
     cudaMalloc(&d_spheres, num_spheres * sizeof(Sphere));
     cudaMemcpy(d_spheres, h_spheres, num_spheres * sizeof(Sphere), cudaMemcpyHostToDevice);
 
+    // Allocate and initialize CURAND states
+    curandState* d_states;
+    cudaMalloc(&d_states, num_pixels * sizeof(curandState));
+    unsigned long seed = 1234UL; // Seed for randomness
+    initialize_curand(d_states, image_width, image_height, seed);
+
     // Launch ray tracer
-    launch_raytracer(framebuffer, image_width, image_height, camera, d_spheres, num_spheres);
+    launch_raytracer(framebuffer, image_width, image_height, camera, d_spheres, num_spheres, d_states);
 
     // Write framebuffer to PPM file
     std::ofstream ofs("output.ppm");
@@ -69,6 +77,7 @@ int main() {
     // Free memory
     cudaFree(framebuffer);
     cudaFree(d_spheres);
+    cudaFree(d_states);
     delete[] h_spheres;
 
     std::cout << "Render complete. Image saved to output.ppm\n";

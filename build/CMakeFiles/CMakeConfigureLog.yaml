@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 06-10-2024 1.39.04 AM.
+      Build started 06-10-2024 2.12.41 AM.
       Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -52,7 +52,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.31
+      Time Elapsed 00:00:01.16
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 06-10-2024 1.39.05 AM.
+      Build started 06-10-2024 2.12.43 AM.
       Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -93,7 +93,7 @@ events:
       CudaBuildCore:
         Compiling CUDA source file CMakeCUDACompilerId.cu...
         Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug".
-        cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmp7c95f16b20b2454fb2a5b26dfd745468.cmd"
+        cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmpc340be7aa2584833ab5071e29d13ebb5.cmd"
         "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"
         
         C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
@@ -114,20 +114,20 @@ events:
         #$ CUDAFE_FLAGS=--sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"
         #$ PTXAS_FLAGS=
         CMakeCUDACompilerId.cu
-        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
         CMakeCUDACompilerId.cu
-        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res
-        #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"
-        #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" 
-        #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" 
-        #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin
-        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res
+        #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"
+        #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" 
+        #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+        #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
         CMakeCUDACompilerId.cu
-        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res
-        #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
-        #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
-        tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
-        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res
+        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res
+        #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+        tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+        #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res
       Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).
       Link:
         E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj
@@ -152,7 +152,7 @@ events:
           1 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:03.55
+      Time Elapsed 00:00:03.91
       
       
       Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
@@ -179,7 +179,7 @@ events:
         found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin/../include"  ]
         considering line: [Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework]
         considering line: [Copyright (C) Microsoft Corporation. All rights reserved.]
-        considering line: [Build started 06-10-2024 1.39.05 AM.]
+        considering line: [Build started 06-10-2024 2.12.43 AM.]
         considering line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
         considering line: [PrepareForBuild:]
         considering line: [  Creating directory "Debug\\".]
@@ -192,25 +192,25 @@ events:
         considering line: [CudaBuildCore:]
         considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
         considering line: [  Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug".]
-        considering line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmp7c95f16b20b2454fb2a5b26dfd745468.cmd"]
+        considering line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmpc340be7aa2584833ab5071e29d13ebb5.cmd"]
         considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
         considering line: [  ]
         considering line: [  C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
         considering line: [                                  CMakeCUDACompilerId.cu]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res]
-        considering line: [  #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"]
-        considering line: [  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" ]
-        considering line: [  #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
-        considering line: [  #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res]
+        considering line: [  #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"]
+        considering line: [  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res]
-        considering line: [  #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
-        considering line: [  #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
-        considering line: [  tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res]
+        considering line: [  #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res]
         considering line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
         considering line: [Link:]
         considering line: [  E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj]
@@ -234,7 +234,7 @@ events:
         considering line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
         considering line: [    1 Warning(s)]
         considering line: [    0 Error(s)]
-        considering line: [Time Elapsed 00:00:03.55]
+        considering line: [Time Elapsed 00:00:03.91]
         considering line: []
       
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -278,7 +278,7 @@ events:
         found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin/../include"  ]
         considering line: [Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework]
         considering line: [Copyright (C) Microsoft Corporation. All rights reserved.]
-        considering line: [Build started 06-10-2024 1.39.05 AM.]
+        considering line: [Build started 06-10-2024 2.12.43 AM.]
         considering line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
         considering line: [PrepareForBuild:]
         considering line: [  Creating directory "Debug\\".]
@@ -291,25 +291,25 @@ events:
         considering line: [CudaBuildCore:]
         considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
         considering line: [  Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug".]
-        considering line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmp7c95f16b20b2454fb2a5b26dfd745468.cmd"]
+        considering line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmpc340be7aa2584833ab5071e29d13ebb5.cmd"]
         considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
         considering line: [  ]
         considering line: [  C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
         considering line: [                                  CMakeCUDACompilerId.cu]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-9.res]
-        considering line: [  #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"]
-        considering line: [  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" ]
-        considering line: [  #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
-        considering line: [  #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-4_CMakeCUDACompilerId.fatbin]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-9.res]
+        considering line: [  #$ cicc --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"]
+        considering line: [  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res" > "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-11.res]
-        considering line: [  #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_0000545c_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
-        considering line: [  #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
-        considering line: [  tmpxft_0000545c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
-        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_0000545c_00000000-12.res]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-11.res]
+        considering line: [  #$ cudafe++ --microsoft_version=1929 --msvc_target_version=1929 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/ROOPDI~1/AppData/Local/Temp/tmpxft_00004b74_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ cl.exe @"C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res" -Fo"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/3.30.4/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00004b74_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\ROOPDI~1\\AppData\\Local\\Temp/tmpxft_00004b74_00000000-12.res]
         considering line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
         considering line: [Link:]
         considering line: [  E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj]
@@ -333,7 +333,7 @@ events:
         considering line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\3.30.4\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
         considering line: [    1 Warning(s)]
         considering line: [    0 Error(s)]
-        considering line: [Time Elapsed 00:00:03.55]
+        considering line: [Time Elapsed 00:00:03.91]
         considering line: []
       
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -373,8 +373,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-5196ki"
-      binary: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-5196ki"
+      source: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-miymq7"
+      binary: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-miymq7"
     cmakeVariables:
       CMAKE_CUDA_ARCHITECTURES: "52"
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
@@ -385,39 +385,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-5196ki'
+        Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-miymq7'
         
-        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_09c27.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_c10c4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06-10-2024 1.39.09 AM.
-        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5196ki\\cmTC_09c27.vcxproj" on node 1 (default targets).
+        Build started 06-10-2024 2.12.47 AM.
+        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miymq7\\cmTC_c10c4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_09c27.dir\\Debug\\".
-          Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5196ki\\Debug\\".
-          Creating directory "cmTC_09c27.dir\\Debug\\cmTC_09c27.tlog\\".
+          Creating directory "cmTC_c10c4.dir\\Debug\\".
+          Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miymq7\\Debug\\".
+          Creating directory "cmTC_c10c4.dir\\Debug\\cmTC_c10c4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_09c27.dir\\Debug\\cmTC_09c27.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_c10c4.dir\\Debug\\cmTC_c10c4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_09c27.dir\\Debug\\\\" /Fd"cmTC_09c27.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c10c4.dir\\Debug\\\\" /Fd"cmTC_c10c4.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_09c27.dir\\Debug\\\\" /Fd"cmTC_09c27.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c10c4.dir\\Debug\\\\" /Fd"cmTC_c10c4.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5196ki\\Debug\\cmTC_09c27.exe" /INCREMENTAL /ILK:"cmTC_09c27.dir\\Debug\\cmTC_09c27.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-5196ki/Debug/cmTC_09c27.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-5196ki/Debug/cmTC_09c27.lib" /MACHINE:X64  /machine:x64 cmTC_09c27.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_09c27.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5196ki\\Debug\\cmTC_09c27.exe
+          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miymq7\\Debug\\cmTC_c10c4.exe" /INCREMENTAL /ILK:"cmTC_c10c4.dir\\Debug\\cmTC_c10c4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-miymq7/Debug/cmTC_c10c4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-miymq7/Debug/cmTC_c10c4.lib" /MACHINE:X64  /machine:x64 cmTC_c10c4.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_c10c4.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miymq7\\Debug\\cmTC_c10c4.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_09c27.dir\\Debug\\cmTC_09c27.tlog\\unsuccessfulbuild".
-          Touching "cmTC_09c27.dir\\Debug\\cmTC_09c27.tlog\\cmTC_09c27.lastbuildstate".
-        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5196ki\\cmTC_09c27.vcxproj" (default targets).
+          Deleting file "cmTC_c10c4.dir\\Debug\\cmTC_c10c4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c10c4.dir\\Debug\\cmTC_c10c4.tlog\\cmTC_c10c4.lastbuildstate".
+        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-miymq7\\cmTC_c10c4.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.89
+        Time Elapsed 00:00:00.92
         
       exitCode: 0
   -
@@ -457,8 +457,8 @@ events:
     checks:
       - "Detecting CUDA compiler ABI info"
     directories:
-      source: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw"
-      binary: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw"
+      source: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx"
+      binary: "C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx"
     cmakeVariables:
       CMAKE_CUDA_ARCHITECTURES: "52"
       CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /GR /EHsc\""
@@ -469,68 +469,68 @@ events:
       variable: "CMAKE_CUDA_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw'
+        Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx'
         
-        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_df58f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_4faa8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 06-10-2024 1.39.11 AM.
-        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" on node 1 (default targets).
+        Build started 06-10-2024 2.12.48 AM.
+        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_df58f.dir\\Debug\\".
-          Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\".
-          Creating directory "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\".
+          Creating directory "cmTC_4faa8.dir\\Debug\\".
+          Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\".
+          Creating directory "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         AddCudaCompileDeps:
           E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=8 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" 
-        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (1) is building "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (1) is building "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
         CudaBuildCore:
           Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu...
-          cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmp0fa828b95ee340f688cd52e4d519dc73.cmd"
-          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_df58f.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu"
+          cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmpbdc9327eddf64b848860aae3716706a4.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_4faa8.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu"
           
-          C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_df58f.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" 
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
+          C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_4faa8.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" 
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
           CMakeCUDACompilerABI.cu
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
           CMakeCUDACompilerABI.cu
           CMakeCUDACompilerABI.cu
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-        C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (CudaBuildCore target(s)).
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+        C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (CudaBuildCore target(s)).
         Link:
-          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\cmTC_df58f.exe" /INCREMENTAL /ILK:"cmTC_df58f.dir\\Debug\\cmTC_df58f.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.lib" /MACHINE:X64  /machine:x64 -v cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj
-        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-             Creating library C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.lib and object C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.exp
-        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-          cmTC_df58f.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\cmTC_df58f.exe
+          E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\cmTC_4faa8.exe" /INCREMENTAL /ILK:"cmTC_4faa8.dir\\Debug\\cmTC_4faa8.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.lib" /MACHINE:X64  /machine:x64 -v cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj
+        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+             Creating library C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.lib and object C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.exp
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+          cmTC_4faa8.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\cmTC_4faa8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\unsuccessfulbuild".
-          Touching "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\cmTC_df58f.lastbuildstate".
-        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default targets).
+          Deleting file "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\cmTC_4faa8.lastbuildstate".
+        Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default target) (1) ->
-        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (CudaBuildCore target) (1:2) ->
+        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default target) (1) ->
+        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (CudaBuildCore target) (1:2) ->
         (CudaBuildCore target) -> 
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-          C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+          C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
         
         
-        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default target) (1) ->
+        "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
-          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]
+          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
+          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]
         
             6 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:03.89
+        Time Elapsed 00:00:03.78
         
       exitCode: 0
   -
@@ -554,72 +554,72 @@ events:
       Parsed CUDA implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw']
+        ignore line: [Change Dir: 'C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx']
         ignore line: []
-        ignore line: [Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_df58f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n]
+        ignore line: [Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_4faa8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n]
         ignore line: [Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework]
         ignore line: [Copyright (C) Microsoft Corporation. All rights reserved.]
         ignore line: []
-        ignore line: [Build started 06-10-2024 1.39.11 AM.]
-        ignore line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" on node 1 (default targets).]
+        ignore line: [Build started 06-10-2024 2.12.48 AM.]
+        ignore line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" on node 1 (default targets).]
         ignore line: [PrepareForBuild:]
-        ignore line: [  Creating directory "cmTC_df58f.dir\\Debug\\".]
-        ignore line: [  Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\".]
-        ignore line: [  Creating directory "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\".]
+        ignore line: [  Creating directory "cmTC_4faa8.dir\\Debug\\".]
+        ignore line: [  Creating directory "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\".]
+        ignore line: [  Creating directory "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\".]
         ignore line: [InitializeBuildStatus:]
-        ignore line: [  Creating "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        ignore line: [  Creating "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
         ignore line: [AddCudaCompileDeps:]
         ignore line: [  E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=8 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" ]
-        ignore line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (1) is building "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        ignore line: [Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (1) is building "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
         ignore line: [CudaBuildCore:]
         ignore line: [  Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu...]
-        ignore line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmp0fa828b95ee340f688cd52e4d519dc73.cmd"]
-        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_df58f.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu"]
+        ignore line: [  cmd.exe /C "C:\\Users\\Roopdilawar Singh\\AppData\\Local\\Temp\\tmpbdc9327eddf64b848860aae3716706a4.cmd"]
+        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_4faa8.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu"]
         ignore line: [  ]
-        ignore line: [  C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_df58f.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" ]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
+        ignore line: [  C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_4faa8.dir\\Debug\\vc142.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
         ignore line: [  CMakeCUDACompilerABI.cu]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
         ignore line: [  CMakeCUDACompilerABI.cu]
         ignore line: [  CMakeCUDACompilerABI.cu]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (CudaBuildCore target(s)).]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (CudaBuildCore target(s)).]
         ignore line: [Link:]
-        ignore line: [  E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\cmTC_df58f.exe" /INCREMENTAL /ILK:"cmTC_df58f.dir\\Debug\\cmTC_df58f.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.lib" /MACHINE:X64  /machine:x64 -v cmTC_df58f.dir\\Debug\\CMakeCUDACompilerABI.obj]
+        ignore line: [  E:\\Program Files\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\cmTC_4faa8.exe" /INCREMENTAL /ILK:"cmTC_4faa8.dir\\Debug\\cmTC_4faa8.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.8\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.lib" /MACHINE:X64  /machine:x64 -v cmTC_4faa8.dir\\Debug\\CMakeCUDACompilerABI.obj]
         ignore line: [LINK : warning LNK4044: unrecognized option '/v']
-        ignore line: [ ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [     Creating library C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.lib and object C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-x2j1lw/Debug/cmTC_df58f.exp]
+        ignore line: [ ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [     Creating library C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.lib and object C:/UALBERTA/ray_tracing_project/RayTracer/build/CMakeFiles/CMakeScratch/TryCompile-9ve5zx/Debug/cmTC_4faa8.exp]
         ignore line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
-        ignore line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [  cmTC_df58f.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\Debug\\cmTC_df58f.exe]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [  cmTC_4faa8.vcxproj -> C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\Debug\\cmTC_4faa8.exe]
         ignore line: [FinalizeBuildStatus:]
-        ignore line: [  Deleting file "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\unsuccessfulbuild".]
-        ignore line: [  Touching "cmTC_df58f.dir\\Debug\\cmTC_df58f.tlog\\cmTC_df58f.lastbuildstate".]
-        ignore line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default targets).]
+        ignore line: [  Deleting file "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\unsuccessfulbuild".]
+        ignore line: [  Touching "cmTC_4faa8.dir\\Debug\\cmTC_4faa8.tlog\\cmTC_4faa8.lastbuildstate".]
+        ignore line: [Done Building Project "C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default targets).]
         ignore line: []
         ignore line: [Build succeeded.]
         ignore line: []
-        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default target) (1) ->]
-        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (CudaBuildCore target) (1:2) ->]
+        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default target) (1) ->]
+        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (CudaBuildCore target) (1:2) ->]
         ignore line: [(CudaBuildCore target) -> ]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
-        ignore line: [  C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
+        ignore line: [  C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
         ignore line: []
         ignore line: []
-        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj" (default target) (1) ->]
+        ignore line: ["C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj" (default target) (1) ->]
         ignore line: [(Link target) -> ]
         ignore line: [  LINK : warning LNK4044: unrecognized option '/v']
-        ignore line: [ ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
+        ignore line: [ ignored [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
         ignore line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
-        ignore line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x2j1lw\\cmTC_df58f.vcxproj]]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\UALBERTA\\ray_tracing_project\\RayTracer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ve5zx\\cmTC_4faa8.vcxproj]]
         ignore line: []
         ignore line: [    6 Warning(s)]
         ignore line: [    0 Error(s)]
         ignore line: []
-        ignore line: [Time Elapsed 00:00:03.89]
+        ignore line: [Time Elapsed 00:00:03.78]
         ignore line: []
         ignore line: []
         linker tool for 'CUDA': E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe

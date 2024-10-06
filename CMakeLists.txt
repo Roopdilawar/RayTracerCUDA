@@ -5,8 +5,7 @@ project(RayTracer LANGUAGES CXX CUDA)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Set CUDA architecture (replace 75 with your GPU's compute capability)
-# You can find your GPU's compute capability here: https://developer.nvidia.com/cuda-gpus
+# Set CUDA architecture (based on RTX 2060's compute capability of 7.5)
 set(CMAKE_CUDA_ARCHITECTURES 75)
 
 # Include directories
@@ -27,5 +26,8 @@ set_target_properties(RayTracer PROPERTIES
     CUDA_SEPARABLE_COMPILATION ON
 )
 
-# Link libraries if necessary (e.g., OpenGL, GLFW)
+# Link CURAND library directly by specifying the library name
+target_link_libraries(RayTracer PRIVATE curand)
+
+# Link additional libraries if necessary (e.g., OpenGL, GLFW)
 # target_link_libraries(RayTracer PRIVATE glfw OpenGL::GL)
