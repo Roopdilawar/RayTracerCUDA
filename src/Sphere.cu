@@ -16,6 +16,10 @@ __host__ __device__ bool Sphere::hit(const Ray& r, float t_min, float t_max, Hit
             rec.t = root;
             rec.point = r.at(rec.t);
             rec.normal = (rec.point - center) / radius;
+            rec.type = type;
+            rec.albedo = albedo;
+            rec.fuzz = fuzz;
+            rec.ir = ir;
             return true;
         }
         root = (-half_b + sqrt_d) / a;
@@ -23,6 +27,10 @@ __host__ __device__ bool Sphere::hit(const Ray& r, float t_min, float t_max, Hit
             rec.t = root;
             rec.point = r.at(rec.t);
             rec.normal = (rec.point - center) / radius;
+            rec.type = type;
+            rec.albedo = albedo;
+            rec.fuzz = fuzz;
+            rec.ir = ir;
             return true;
         }
     }

@@ -59,6 +59,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\vector_function
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\vector_functions.hpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\vector_types.h
 C:\UALBERTA\ray_tracing_project\RayTracer\include\HitRecord.h
+C:\UALBERTA\ray_tracing_project\RayTracer\include\MaterialType.h
 C:\UALBERTA\ray_tracing_project\RayTracer\include\Ray.h
 C:\UALBERTA\ray_tracing_project\RayTracer\include\Sphere.h
 C:\UALBERTA\ray_tracing_project\RayTracer\include\Vector3.h

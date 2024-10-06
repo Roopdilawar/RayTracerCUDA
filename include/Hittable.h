@@ -7,7 +7,6 @@
 #define __device__
 #endif
 
-
 #include "Ray.h"
 #include "HitRecord.h"
 
