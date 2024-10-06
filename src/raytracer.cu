@@ -13,7 +13,7 @@
 #include <device_launch_parameters.h>
 #include <float.h>
 
-#define MAX_DEPTH 50 // Adjust as needed
+#define MAX_DEPTH 5000 // Adjust as needed
 
 // Forward declaration of hit_world
 __device__ bool hit_world(const Ray& r, float t_min, float t_max, HitRecord& rec, Sphere* spheres, int num_spheres);

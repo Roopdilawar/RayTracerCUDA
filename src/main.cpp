@@ -12,11 +12,9 @@
 #include <cuda_runtime.h>
 #include <iostream>
 #include <fstream>
-#include <curand_kernel.h> // Include CURAND
 #include <vector>
 #include <cstdlib> // For rand and srand
 #include <ctime>   // For time
-#include <random>  // For better random number generation
 
 // Custom clamp function for C++14
 template <typename T>
@@ -30,19 +28,11 @@ extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int imag
 extern "C" void initialize_curand(curandState* d_states, int image_width, int image_height, unsigned long seed);
 
 int main() {
-    // Seed the random number generator
-    std::mt19937 rng(static_cast<unsigned int>(time(0)));
-    std::uniform_real_distribution<float> dist_x(-2.0f, 2.0f);      // Visible range in x
-    std::uniform_real_distribution<float> dist_y(-1.0f, 1.0f);      // Visible range in y
-    std::uniform_real_distribution<float> dist_z(-10.0f, -2.0f);    // Visible range in z (in front of the camera)
-    std::uniform_real_distribution<float> dist_radius(1.0f, 2.0f);  // Sphere size
-    std::uniform_real_distribution<float> dist_color(0.0f, 1.0f);
-    std::uniform_real_distribution<float> dist_fuzz(0.0f, 0.5f);
-    std::uniform_real_distribution<float> dist_ir(1.3f, 2.5f);
-    std::uniform_int_distribution<int> dist_material(0, 2);
+    // Seed the random number generator (not used anymore, but kept for potential future use)
+    std::srand(static_cast<unsigned int>(time(0)));
 
     // Image dimensions
-    const int image_width = 1600;
+    const int image_width = 1600;  // Reduced for quicker testing
     const int image_height = 1200;
     const int num_pixels = image_width * image_height;
 
@@ -56,78 +46,70 @@ int main() {
 
     // Define camera
     Camera camera;
-    camera.origin = Vector3(0.0f, 0.0f, 0.0f);  // Camera at origin
+    camera.origin = Vector3(0.0f, 0.0f, 0.5f);  // Camera at origin
     camera.lower_left_corner = Vector3(-2.0f, -1.5f, -1.0f);
     camera.horizontal = Vector3(4.0f, 0.0f, 0.0f);
     camera.vertical = Vector3(0.0f, 3.0f, 0.0f);
 
-    // Define multiple spheres
-    int num_spheres = 4; // Adjust the number as needed for testing
+    // Define spheres
+    int num_spheres = 2; // 1 ground + 3 visible spheres
     std::vector<Sphere> h_spheres;
     std::vector<MaterialType> h_material_types;
     std::vector<Vector3> h_albedos;
     std::vector<float> h_fuzzes;
     std::vector<float> h_irs;
 
-    // Pre-allocate materials
-    for (int i = 0; i < num_spheres; ++i) {
-        // Randomly choose a material type
-        int material_type = dist_material(rng); // 0: LAMBERTIAN, 1: METAL, 2: DIELECTRIC
-        h_material_types.push_back(static_cast<MaterialType>(material_type));
+    // Ground Sphere - Silver Metal
+    h_material_types.push_back(METAL);
+    h_albedos.push_back(Vector3(0.8f, 0.8f, 0.8f)); // Silver color (gray)
+    h_fuzzes.push_back(0.1f); // Slight fuzz for a metallic reflection
+    h_irs.push_back(1.0f);    // Not used for Metal
+    Vector3 ground_center(0.0f, -1000.0f, -5.0f); // Positioned below the camera
+    float ground_radius = 1000.0f;
+    h_spheres.emplace_back(ground_center, ground_radius, h_material_types.back(), h_albedos.back(), h_fuzzes.back(), h_irs.back());
 
-        if (material_type == 0) {
-            // Lambertian with random albedo
-            Vector3 albedo = Vector3(dist_color(rng), dist_color(rng), dist_color(rng));
-            h_albedos.push_back(albedo);
-            h_fuzzes.push_back(0.0f); // Not used
-            h_irs.push_back(1.0f);    // Not used
-        }
-        else if (material_type == 1) {
-            // Metal with random albedo and fuzz
-            Vector3 albedo = Vector3(0.5f + 0.5f * dist_color(rng), 
-                                     0.5f + 0.5f * dist_color(rng), 
-                                     0.5f + 0.5f * dist_color(rng));
-            float fuzz = dist_fuzz(rng);
-            h_albedos.push_back(albedo);
-            h_fuzzes.push_back(fuzz);
-            h_irs.push_back(1.0f);    // Not used
-        }
-        else {
-            // Dielectric with random index of refraction between 1.3 and 2.5
-            float ir = dist_ir(rng);
-            h_albedos.push_back(Vector3(1.0f, 1.0f, 1.0f)); // Not used
-            h_fuzzes.push_back(0.0f); // Not used
-            h_irs.push_back(ir);
-        }
+    // Visible Sphere 1 - Solid Red
+    h_material_types.push_back(LAMBERTIAN);
+    h_albedos.push_back(Vector3(1.0f, 0.0f, 0.0f)); // Solid red
+    h_fuzzes.push_back(0.0f); // Not used for Lambertian
+    h_irs.push_back(1.0f);    // Not used for Lambertian
+    Vector3 sphere1_center(0.0f, 0.5f, -1.0f);
+    float sphere1_radius = 0.5f;
+    h_spheres.emplace_back(sphere1_center, sphere1_radius, h_material_types.back(), h_albedos.back(), h_fuzzes.back(), h_irs.back());
 
-        // Place spheres within a visible range from the camera
-        Vector3 center = Vector3(
-            dist_x(rng),   // x between -2 and 2
-            dist_y(rng),   // y between -1 and 1
-            dist_z(rng)    // z between -10 and -2 (in front of the camera)
-        );
+    // // Visible Sphere 2
+    // h_material_types.push_back(DIELECTRIC);
+    // h_albedos.push_back(Vector3(1.0f, 1.0f, 1.0f)); // Not used for Dielectric
+    // h_fuzzes.push_back(0.0f); // Not used for Dielectric
+    // h_irs.push_back(1.5f);    // Glass-like
+    // Vector3 sphere2_center(2.0f, 0.0f, -6.0f);
+    // float sphere2_radius = 1.0f;
+    // h_spheres.emplace_back(sphere2_center, sphere2_radius, h_material_types.back(), h_albedos.back(), h_fuzzes.back(), h_irs.back());
 
-        // Random radius between 0.2 and 1.0
-        float radius = dist_radius(rng);
+    // // Visible Sphere 3
+    // h_material_types.push_back(LAMBERTIAN);
+    // h_albedos.push_back(Vector3(0.1f, 0.2f, 0.5f)); // Solid blue
+    // h_fuzzes.push_back(0.0f); // Not used for Lambertian
+    // h_irs.push_back(1.0f);    // Not used for Lambertian
+    // Vector3 sphere3_center(-2.0f, 0.0f, -6.0f);
+    // float sphere3_radius = 1.0f;
+    // h_spheres.emplace_back(sphere3_center, sphere3_radius, h_material_types.back(), h_albedos.back(), h_fuzzes.back(), h_irs.back());
 
-        h_spheres.emplace_back(center, radius, h_material_types[i], h_albedos[i], h_fuzzes[i], h_irs[i]);
-    }
-
-    // Print the generated spheres for debugging
-    std::cout << "Generated spheres:\n";
-    for (int i = 0; i < num_spheres; ++i) {
-        std::cout << "Sphere " << i << ": Center(" << h_spheres[i].center.x << ", " 
-                  << h_spheres[i].center.y << ", " << h_spheres[i].center.z 
-                  << "), Radius: " << h_spheres[i].radius 
-                  << ", Material Type: " << h_material_types[i];
-        if (h_material_types[i] == LAMBERTIAN || h_material_types[i] == METAL)
-            std::cout << ", Albedo: (" << h_albedos[i].x << ", " << h_albedos[i].y << ", " << h_albedos[i].z << ")";
-        if (h_material_types[i] == METAL)
-            std::cout << ", Fuzz: " << h_fuzzes[i];
-        if (h_material_types[i] == DIELECTRIC)
-            std::cout << ", IR: " << h_irs[i];
-        std::cout << "\n";
-    }
+    // // Print the generated spheres for debugging
+    // std::cout << "Generated spheres:\n";
+    // for (int i = 0; i < num_spheres; ++i) {
+    //     std::cout << "Sphere " << i << ": Center(" << h_spheres[i].center.x << ", " 
+    //               << h_spheres[i].center.y << ", " << h_spheres[i].center.z 
+    //               << "), Radius: " << h_spheres[i].radius 
+    //               << ", Material Type: " << h_material_types[i];
+    //     if (h_material_types[i] == LAMBERTIAN || h_material_types[i] == METAL)
+    //         std::cout << ", Albedo: (" << h_albedos[i].x << ", " << h_albedos[i].y << ", " << h_albedos[i].z << ")";
+    //     if (h_material_types[i] == METAL)
+    //         std::cout << ", Fuzz: " << h_fuzzes[i];
+    //     if (h_material_types[i] == DIELECTRIC)
+    //         std::cout << ", IR: " << h_irs[i];
+    //     std::cout << "\n";
+    // }
 
     // Allocate device memory for spheres
     Sphere* d_spheres;
