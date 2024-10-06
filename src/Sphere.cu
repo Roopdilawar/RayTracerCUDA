@@ -28,4 +28,3 @@ __host__ __device__ bool Sphere::hit(const Ray& r, float t_min, float t_max, Hit
     }
     return false;
 }
-

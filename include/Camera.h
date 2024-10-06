@@ -1,4 +1,5 @@
 // include/Camera.h
+
 #ifndef CAMERA_H
 #define CAMERA_H
 
@@ -6,7 +7,6 @@
 #define __host__
 #define __device__
 #endif
-
 
 #include "Vector3.h"
 #include "Ray.h"

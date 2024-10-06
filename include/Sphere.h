@@ -1,4 +1,5 @@
 // include/Sphere.h
+
 #ifndef SPHERE_H
 #define SPHERE_H
 
@@ -6,7 +7,6 @@
 #define __host__
 #define __device__
 #endif
-
 
 #include "Vector3.h"
 #include "Ray.h"
@@ -23,4 +23,3 @@ struct Sphere {
 };
 
 #endif // SPHERE_H
-

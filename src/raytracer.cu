@@ -1,29 +1,45 @@
 // src/raytracer.cu
 
-// Include statements
 #include "Vector3.h"
 #include "Ray.h"
 #include "Camera.h"
 #include "Sphere.h"
 #include "HitRecord.h"
+#include "Utils.h"
 
 #include <cuda_runtime.h>
 #include <device_launch_parameters.h>
 #include <float.h>
 
-#define MAX_DEPTH 5
+#define MAX_DEPTH 500 // You can adjust this as needed
 
 // Forward declaration of hit_world
 __device__ bool hit_world(const Ray& r, float t_min, float t_max, HitRecord& rec, Sphere* spheres, int num_spheres);
 
-__device__ Vector3 ray_color(const Ray& r, Sphere* spheres, int num_spheres) {
-    HitRecord rec;
-    if (hit_world(r, 0.001f, FLT_MAX, rec, spheres, num_spheres)) {
-        return 0.5f * (rec.normal + Vector3(1.0f, 1.0f, 1.0f));
+// Iterative ray_color function with unique seed per pixel
+__device__ Vector3 ray_color_iterative(Ray r, Sphere* spheres, int num_spheres, int pixel_index) {
+    Vector3 color(1.0f, 1.0f, 1.0f); // Initialize color
+    unsigned int seed = pixel_index; // Unique seed per pixel
+
+    for (int depth = 0; depth < MAX_DEPTH; ++depth) {
+        HitRecord rec;
+        if (hit_world(r, 0.001f, FLT_MAX, rec, spheres, num_spheres)) {
+            // Generate a unique seed for each reflection based on depth
+            unsigned int reflection_seed = seed * (depth + 1);
+            Vector3 target = rec.point + rec.normal + random_unit_vector(reflection_seed);
+            Vector3 attenuation(0.8f, 0.8f, 0.8f); // Attenuation factor
+            color *= attenuation; // Apply attenuation
+            r = Ray(rec.point, target - rec.point); // Update the ray
+        } else {
+            // Background gradient
+            Vector3 unit_direction = r.direction.normalized();
+            float t = 0.5f * (unit_direction.y + 1.0f);
+            Vector3 bg_color = (1.0f - t) * Vector3(1.0f, 1.0f, 1.0f) + t * Vector3(0.5f, 0.7f, 1.0f);
+            color *= bg_color;
+            break; // Ray has left the scene
+        }
     }
-    Vector3 unit_direction = r.direction.normalized();
-    float t = 0.5f * (unit_direction.y + 1.0f);
-    return (1.0f - t) * Vector3(1.0f, 1.0f, 1.0f) + t * Vector3(0.5f, 0.7f, 1.0f);
+    return color;
 }
 
 __device__ bool hit_world(const Ray& r, float t_min, float t_max, HitRecord& rec, Sphere* spheres, int num_spheres) {
@@ -49,10 +65,10 @@ __global__ void render_kernel(Vector3* framebuffer, int image_width, int image_h
 
     int pixel_index = j * image_width + i;
 
-    float u = float(i) / (image_width - 1);
-    float v = float(j) / (image_height - 1);
+    float u = static_cast<float>(i) / (image_width - 1);
+    float v = static_cast<float>(j) / (image_height - 1);
     Ray r = camera.get_ray(u, v);
-    framebuffer[pixel_index] = ray_color(r, spheres, num_spheres);
+    framebuffer[pixel_index] = ray_color_iterative(r, spheres, num_spheres, pixel_index);
 }
 
 // Host function to launch the kernel
@@ -62,6 +78,7 @@ extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int imag
                 (image_height + threads.y - 1) / threads.y);
 
     render_kernel<<<blocks, threads>>>(framebuffer, image_width, image_height, camera, d_spheres, num_spheres);
+    cudaError_t err = cudaGetLastError();
+   
     cudaDeviceSynchronize();
 }
-
