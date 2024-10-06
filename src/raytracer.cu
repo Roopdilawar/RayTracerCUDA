@@ -13,7 +13,7 @@
 #include <device_launch_parameters.h>
 #include <float.h>
 
-#define MAX_DEPTH 5000 // Adjust as needed
+#define MAX_DEPTH 5000
 
 // Forward declaration of hit_world
 __device__ bool hit_world(const Ray& r, float t_min, float t_max, HitRecord& rec, Sphere* spheres, int num_spheres);
@@ -119,28 +119,88 @@ __device__ bool hit_world(const Ray& r, float t_min, float t_max, HitRecord& rec
     return hit_anything;
 }
 
-__global__ void render_kernel(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* spheres, int num_spheres, curandState* states) {
+__global__ void render_kernel(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* spheres, int num_spheres, curandState* states, int samples_per_pixel) {      
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     int j = blockIdx.y * blockDim.y + threadIdx.y;
 
     if (i >= image_width || j >= image_height) return;
 
     int pixel_index = j * image_width + i;
+    Vector3 accumulated_color(0.0f, 0.0f, 0.0f);
 
-    float u = static_cast<float>(i) / (image_width - 1);
-    float v = static_cast<float>(j) / (image_height - 1);
-    Ray r = camera.get_ray(u, v);
-    framebuffer[pixel_index] = ray_color_iterative(r, spheres, num_spheres, states, pixel_index);
+    curandState local_state = states[pixel_index]; // Load CURAND state
+
+    for (int s = 0; s < samples_per_pixel; ++s) {
+        // Generate random offsets for anti-aliasing
+        float u = (static_cast<float>(i) + curand_uniform(&local_state)) / (image_width - 1);
+        float v = (static_cast<float>(j) + curand_uniform(&local_state)) / (image_height - 1);
+        Ray r = camera.get_ray(u, v);
+        accumulated_color += ray_color_iterative(r, spheres, num_spheres, &local_state, pixel_index);
+    }
+
+    states[pixel_index] = local_state; // Save the updated state
+
+    // Average the accumulated color
+    framebuffer[pixel_index] = accumulated_color / static_cast<float>(samples_per_pixel);
+}
+
+// Bilateral Filter Kernel
+__global__ void bilateral_filter_kernel(const Vector3* input, Vector3* output, int width, int height, int kernel_radius, float sigma_spatial, float sigma_intensity) {
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
+    
+    if (x >= width || y >= height) return;
+    
+    int idx = y * width + x;
+    Vector3 center = input[idx];
+    Vector3 sum(0.0f, 0.0f, 0.0f);
+    float weight_sum = 0.0f;
+    
+    for (int ky = -kernel_radius; ky <= kernel_radius; ++ky) {
+        for (int kx = -kernel_radius; kx <= kernel_radius; ++kx) {
+            int nx = min(max(x + kx, 0), width - 1);
+            int ny = min(max(y + ky, 0), height - 1);
+            int n_idx = ny * width + nx;
+            Vector3 neighbor = input[n_idx];
+            
+            float spatial_dist = sqrtf(float(kx * kx + ky * ky));
+            float spatial_weight = expf(-(spatial_dist * spatial_dist) / (2.0f * sigma_spatial * sigma_spatial));
+            
+            Vector3 diff = neighbor - center;
+            float intensity_dist = diff.length();
+            float intensity_weight = expf(-(intensity_dist * intensity_dist) / (2.0f * sigma_intensity * sigma_intensity));
+            
+            float weight = spatial_weight * intensity_weight;
+            sum += neighbor * weight;
+            weight_sum += weight;
+        }
+    }
+    
+    output[idx] = sum / weight_sum;
 }
 
 // Host function to launch the ray tracing kernel
-extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* d_spheres, int num_spheres, curandState* d_states) {
+extern "C" void launch_raytracer(Vector3* framebuffer, int image_width, int image_height, Camera camera, Sphere* d_spheres, int num_spheres, curandState* d_states, int samples_per_pixel) {
     dim3 threads(16, 16);
     dim3 blocks((image_width + threads.x - 1) / threads.x,
                 (image_height + threads.y - 1) / threads.y);
 
-    render_kernel<<<blocks, threads>>>(framebuffer, image_width, image_height, camera, d_spheres, num_spheres, d_states);
+    render_kernel<<<blocks, threads>>>(framebuffer, image_width, image_height, camera, d_spheres, num_spheres, d_states, samples_per_pixel);
     cudaError_t err = cudaGetLastError();
+
+
+    cudaDeviceSynchronize();
+}
+
+// Host function to launch the bilateral filter kernel
+extern "C" void launch_bilateral_filter(const Vector3* d_input, Vector3* d_output, int image_width, int image_height, int kernel_radius, float sigma_spatial, float sigma_intensity) {
+    dim3 threads(16, 16);
+    dim3 blocks((image_width + threads.x - 1) / threads.x,
+                (image_height + threads.y - 1) / threads.y);
+    
+    bilateral_filter_kernel<<<blocks, threads>>>(d_input, d_output, image_width, image_height, kernel_radius, sigma_spatial, sigma_intensity);
+    cudaError_t err = cudaGetLastError();
+
 
     cudaDeviceSynchronize();
 }
@@ -151,5 +211,8 @@ extern "C" void initialize_curand(curandState* d_states, int width, int height, 
 
     // Launch kernel to initialize CURAND states
     init_curand_kernel<<<blocks, threads>>>(d_states, width, height, seed);
+    cudaError_t err = cudaGetLastError();
+
+
     cudaDeviceSynchronize();
 }
